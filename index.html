@@ -1,1 +1,165 @@
-animation n stuff
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>motion design</title>
+
+<header>
+<br/>
+	<h2>HYPER ISLAND</h2>
+	<h3> <span>🙞</span> class of 2022<span>🙝</span> </h3>
+<br/>
+</header>
+
+<media>
+	<h1>MOTION DESIGN</h1>
+</media>
+
+<br/>
+
+<h2>PROJECTS</h2>
+<nav>
+	<ul>
+	<li><a href="">LOVE LETTERS ✉️</a></li>
+	<li><a href="">MOTION TALKS 🎤</a></li>
+	<li><a href="">⛵ JOURNEY</a></li>
+	<li><a href="">📒 PORTFOLIO</a></li>
+	</ul>
+</nav>
+
+<style>
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-size: 12pt;
+	max-width: 100%;
+	line-height: 2em;
+}
+
+a {
+	color: white;
+	text-decoration: none;
+	border-color: #666;
+	padding: 1ex;
+}
+br {
+	margin: 1vw;
+}
+hr {
+	margin: 4px;
+	border-color: #444;
+}
+
+body{
+	margin: auto;
+	color: white;
+	background: #2b2b2b;
+}
+
+h1 {
+	text-align: center;
+	font-size: 6vw;
+	font-weight: 400;
+	letter-spacing: 1ex;
+	white-space: nowrap;
+	width: 100%;
+	animation: fadein 2s;	
+}
+
+h2{
+	letter-spacing: 1ex;
+	text-align: center;
+	color: #666;
+}
+h3 {
+	font-style: italic;
+	text-align: center;
+	color: #666;
+}
+
+@keyframes fadein {
+    from { 
+		opacity: 0; 
+		letter-spacing: 1.1ex;
+	}
+    to { 
+		opacity: 1; 
+		letter-spacing: 1ex;
+	}
+}
+nav {
+    column-count: 2;
+	width: max-content;
+    border: 1px solid;
+	
+	margin: auto;
+}
+
+@keyframes glow {
+    0% { 
+		background: transparent; 
+	}
+    50% { 
+		background: rgba(255,255,0, 0.2); 
+	}
+	70% { 
+		background: yellow; 
+	}
+    80% { 
+		background: white; 
+	}
+    100% { 
+		background: transparent; 
+	}
+}
+nav {
+    column-count: 2;
+	width: max-content;
+    border: 1px solid;
+	
+	margin: auto;
+}
+
+ul {
+    list-style: cambodian;
+    list-style: none;
+	list-style-position: inside;
+}
+li:nth-child(1), li:nth-child(2){
+	text-align: right;
+}
+li:nth-child(3), li:nth-child(23){
+	text-align: left;
+}
+nav {
+	padding: 2ex;
+}
+nav li{
+	padding: 1ex;
+}
+
+footer {
+    color: #ffffff50;
+	padding: 4ex;
+	position: absolute;
+	bottom: 0;
+	width: 100vw;
+}
+
+.stripes {
+	background: repeating-linear-gradient( 0, #444 0, #444 1pt, transparent 1pt, transparent 4pt);
+	line-height: 1em;
+	height: 1em;
+}
+
+span {
+    margin: 4ch;
+}
+
+media {
+    height: 25vw;
+    width: 100vw;
+	animation: glow 4s ;
+    display: flex;
+	align-items: center;
+}
+
