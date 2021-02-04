@@ -18,9 +18,9 @@
 <nav>
 	<ul>
 	<li><a href="stumholmen.html">✉️ LOVE LETTERS </a></li>
-	<li><a href="#">🎤 MOTION TALKS </a></li>
-	<li><a href="#">⛵ JOURNEY</a></li>
-	<li><a href="#">📒 PORTFOLIO</a></li>
+	<li><a href="#" class=todo>🎤 MOTION TALKS </a></li>
+	<li><a href="#" class=todo>⛵ JOURNEYS</a></li>
+	<li><a href="#" class=todo>📒 PORTFOLIO</a></li>
 	</ul>
 </nav>
 
@@ -164,4 +164,12 @@ media {
 	display: flex;
 	align-items: center;
 }
-
+todo::after {
+    text-decoration: line-through;
+    content: 'soon';
+    color: tomato;
+    background: black;
+    padding: 4pt;
+    border-radius: 5pt;
+    border-top: 1pt solid #444;
+}
