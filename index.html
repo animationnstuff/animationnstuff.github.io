@@ -164,12 +164,18 @@ media {
 	display: flex;
 	align-items: center;
 }
+.todo {
+    position: relative;
+}
 .todo::after {
-    text-decoration: line-through;
-    content: 'soon';
+    content: 'SOON';
     color: tomato;
     background: black;
-    padding: 4pt;
     border-radius: 5pt;
     border-top: 1pt solid #444;
+    position: absolute;
+    top: -5pt;
+    line-height: 1ex;
+    padding: 6pt;
+    right: -10pt;
 }
