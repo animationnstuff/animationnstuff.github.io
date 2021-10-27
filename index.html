@@ -1,185 +1,25 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>motion design</title>
+<title>MD22</title>
 
-<header>
-<br/>
-	<h2>A <a href=https://www.hyperisland.com/>HYPER ISLAND</a> STUDENT PROJECT</h2>
-	<h3> <span>🙞</span> class of 2022<span>🙝</span> </h3>
-<br/>
-</header>
-
-<media>
-	<h1>MOTION DESIGN</h1>
-</media>
-
-<br/>
-
-<h2>PROJECTS</h2>
+<h2>MOTION DESIGN - CLASS OF HYPER ISLAND 2022</h2>
 <nav>
 	<ul>
-	<li><a href="stumholmen.html">✉️ LOVE LETTERS </a></li>
-	<li><a href="https://youtu.be/JIfCW6UNd_A">🎤 MOTION TALKS </a></li>
-	<!-- <li><a href="#" class=todo>⛵ JOURNEYS</a></li> -->
-	<li><a href="#" class=todo>📒 PORTFOLIOS</a></li>
-	<li><a href="https://www.notion.so/Hand-drawn-animation-11d03033ecb6435bbdb4884a06d05960">🎓 LEARNING</a></li>
+	<li><a href="stumholmen.html">✉️ LOVE LETTER (fall-20 exhhibition)</a></li>
+	<li><a href="https://youtu.be/JIfCW6UNd_A">🎤 MOTION TALKS (podcast)</a></li>
+	<li><a class=todo>⛵ JOURNEYS (stories)</a></li>
+	<li><a class=todo>🎓 SPECIALISATION (studies)</a></li>
+	<li><a href=endgame/index.html>🚀 FINAL (fall-21 projects)</a></li>
 	</ul>
 </nav>
 
 <style>
-
-*{
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-	font-size: 12pt;
-	max-width: 100%;
-	line-height: 2em;
-}
-
-a {
-	color: white;
-	text-decoration: none;
-	border-color: #666;
-	padding: 1ex;
-	white-space: nowrap;
-}
-br {
-	margin: 1vw;
-}
-hr {
-	margin: 4px;
-	border-color: #444;
-}
-
-body{
-	margin: auto;
-	color: white;
-	background: #2b2b2b;
-}
-
-h1 {
-	text-align: center;
-	font-size: 6vw;
-	font-weight: 400;
-	letter-spacing: 1ex;
-	white-space: nowrap;
-	width: 100%;
-	animation: fadein 2s;
-	text-deoration: none;
-}
-
-h2{
-	letter-spacing: 1ex;
-	text-align: center;
-	color: #666;
-	text-deoration: none;
-}
-h3 {
-	font-style: italic;
-	text-align: center;
-	color: #666;
-	text-deoration: none;
-}
-
-@keyframes fadein {
-    from { 
-		opacity: 0; 
-		letter-spacing: 1.1ex;
+	body, a{
+		background: grey;
+		color: yellow;
+		font-weight: bold;
 	}
-    to { 
-		opacity: 1; 
-		letter-spacing: 1ex;
+	a.todo{
+		text-decoration: line-through;
+		color: #555;
 	}
-}
-nav {
-    column-count: 2;
-	width: max-content;
-    border: 1px solid;
-	
-	margin: auto;
-}
-
-@keyframes glow {
-    0% { 
-		background: transparent; 
-	}
-    50% { 
-		background: rgba(255,255,0, 0.2); 
-	}
-	70% { 
-		background: yellow; 
-	}
-    80% { 
-		background: white; 
-	}
-    100% { 
-		background: transparent; 
-	}
-}
-nav {
-    column-count: 2;
-	width: max-content;
-    border: 1px solid;
-	
-	margin: auto;
-}
-
-ul {
-    list-style: cambodian;
-    list-style: none;
-	list-style-position: inside;
-}
-li:nth-child(1), li:nth-child(2){
-	text-align: right;
-}
-li:nth-child(3), li:nth-child(23){
-	text-align: left;
-}
-nav {
-	padding: 2ex;
-	column-width: 20ch;
-}
-nav li{
-	padding: 1ex;
-}
-
-footer {
-    color: #ffffff50;
-	padding: 4ex;
-	position: absolute;
-	bottom: 0;
-	width: 100vw;
-}
-
-.stripes {
-	background: repeating-linear-gradient( 0, #444 0, #444 1pt, transparent 1pt, transparent 4pt);
-	line-height: 1em;
-	height: 1em;
-}
-
-span {
-    margin: 4ch;
-}
-
-media {
-	height: 25vw;
-	width: 100vw;
-	animation: glow 4s;
-	display: flex;
-	align-items: center;
-}
-.todo {
-    position: relative;
-}
-.todo::after {
-    content: 'SOON';
-    color: tomato;
-    background: black;
-    border-radius: 5pt;
-    border-top: 1pt solid #444;
-    position: absolute;
-    top: -5pt;
-    line-height: 1ex;
-    padding: 6pt;
-    right: -10pt;
-}
+</style>
