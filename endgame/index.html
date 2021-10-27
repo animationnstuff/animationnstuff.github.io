@@ -32,7 +32,7 @@
 
 
 <h1 id=projects>Projects</h1>
-<div><a href="cinrender.com	Harald">Hjortsberg</a><p>VFX/ 3D Artist</p></div>
+<div><a href="cinrender.com">Harald Hjortsberg</a><p>VFX/ 3D Artist</p></div>
 <div><a href="https://www.andreaeberggren.com/">Andrea Berggren</a><p>Still searching for it</p></div>
 <div><a href="daou.se">Fredrik Lundin</a><p>Character animator</p></div>
 <div><a href="elinmattsson.com">Elin Mattsson</a><p>Creative Director/Storyboarder</p></div>
@@ -93,6 +93,9 @@ picture{
     left: 0; top: 0;
     width: 100%; height: 100%;
     pointer-events: none;
+    
+    border: 5pt solid var(--red);
+    box-sizing: border-box;
 }
 picture .left {
     position: fixed;
@@ -108,8 +111,8 @@ picture .right {
 }
 picture .corner {
     position: fixed;
-    right: 0;
-    bottom: 0;
+    right: 5pt;
+    bottom: 5pt;
     width: 25%;
 }
     
