@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <meta charset=utf-8>
 <link rel="stylesheet" href="https://use.typekit.net/lls8hve.css">
 <title>END GAME</title>
@@ -16,8 +17,10 @@
     <p class=right>MD22</p>
 </picture>
 
-
 <h1 id=home></h1>
+
+<h1 id=countdown></h1>
+
 
 <!-- Add a placeholder for the Twitch embed -->
 <div id="twitch-embed"></div>
@@ -32,26 +35,26 @@
 
 
 <h1 id=projects>Projects</h1>
-<div><a href="cinrender.com">Harald Hjortsberg</a><p>VFX/ 3D Artist</p></div>
+<div><a href="https://cinrender.com">Harald Hjortsberg</a><p>VFX/ 3D Artist</p></div>
 <div><a href="https://www.andreaeberggren.com/">Andrea Berggren</a><p>Still searching for it</p></div>
-<div><a href="daou.se">Fredrik Lundin</a><p>Character animator</p></div>
-<div><a href="elinmattsson.com">Elin Mattsson</a><p>Creative Director/Storyboarder</p></div>
-<div><a href="Ludwiglundgren.com">Ludwig Lundgren</a><p>Cat Wizard</p></div>
-<div><a href="johannafalcon.com">Johanna Falcón </a><p>Traditional och vector based 2D animator</p></div>
-<div><a href="rebeccamller.com">Rebecca Möller</a><p></p></div>
-<div><a href="www.kajsaholten.com">Kajsa Holten</a><p>Karma delivery person</p></div>
-<div><a href="benkewanthatham.com">Benke Wanthatham</a><p></p></div>
+<div><a href="https://daou.se">Fredrik Lundin</a><p>Character animator</p></div>
+<div><a href="https://elinmattsson.com">Elin Mattsson</a><p>Creative Director/Storyboarder</p></div>
+<div><a href="https://Ludwiglundgren.com">Ludwig Lundgren</a><p>Cat Wizard</p></div>
+<div><a href="https://johannafalcon.com">Johanna Falcón </a><p>Traditional och vector based 2D animator</p></div>
+<div><a href="https://rebeccamller.com">Rebecca Möller</a><p></p></div>
+<div><a href="https://www.kajsaholten.com">Kajsa Holten</a><p>Karma delivery person</p></div>
+<div><a href="https://benkewanthatham.com">Benke Wanthatham</a><p></p></div>
 <div><a href="https://lucasrank.com">Lucas Rankegård</a><p></p></div>
-<div><a href="felixhemstadius.com">Felix Hemstadius</a><p></p></div>
-<div><a href="melindaastrom.wixsite.com/portfolio">Melinda Åström</a><p></p></div>
-<div><a href="www.matildalandstrom.squarespace.com">Matilda Landström</a><p>An Avenger</p></div>
+<div><a href="https://felixhemstadius.com">Felix Hemstadius</a><p></p></div>
+<div><a href="https://melindaastrom.wixsite.com/portfolio">Melinda Åström</a><p></p></div>
+<div><a href="https://www.matildalandstrom.squarespace.com">Matilda Landström</a><p>An Avenger</p></div>
 <div><a href="https://pascalafuentes.myportfolio.com/">Pascal Amestegui Fuentes</a><p>Professional hamburger taster</p></div>
-<div><a href="coming soon">Sarah Jawad</a><p>still looking for it</p></div>
+<div><a>Sarah Jawad</a><p>still looking for it</p></div>
 <div><a href="https://dolorestillaeus.com/">Dolores Tillaeus</a><p></p></div>
 <div><a href="https://joannask.myportfolio.com/">Jo Soufi Karlsson</a><p>Traditional & 2D animator, character animator</p></div>
 <div><a href="https://www.bibi-boring.com/">Þröstur 'Bibi' Söring</a><p>Muppet</p></div>
 <div><a href="https://www.thecreativestream.co/">Emelie Bäck</a><p>Owning my own Studio</p></div>
-<div><a href="sofiallorca.com">Sofia Llorca</a><p></p></div>
+<div><a href="https://sofiallorca.com">Sofia Llorca</a><p></p></div>
 <div><a href="https://miakemppainen.cargo.site/">Mia Kemppainen </a><p>Art Director</p></div>
 
 <h1 id=about>About</h1>
@@ -194,3 +197,49 @@ div>a{
 
 
 </style>
+
+
+<script>
+
+// https://stackoverflow.com/a/9335296
+var end = new Date('2021 11 24 19:0')
+
+var _second = 1000;
+var _minute = _second * 60;
+var _hour = _minute * 60;
+var _day = _hour * 24;
+var timer;
+
+function showRemaining() {
+    var now = new Date();
+    var distance = end - now;
+    if (distance < 0) {
+
+        clearInterval(timer);
+        document.getElementById('countdown').innerHTML = 'EXPIRED!';
+
+        return;
+    }
+    var days = Math.floor(distance / _day);
+    var hours = Math.floor((distance % _day) / _hour);
+    var minutes = Math.floor((distance % _hour) / _minute);
+    var seconds = Math.floor((distance % _minute) / _second);
+
+    document.getElementById('countdown').innerHTML = "LIVE in "
+    document.getElementById('countdown').innerHTML += days + 'days ';
+    document.getElementById('countdown').innerHTML += hours + 'hrs ';
+    document.getElementById('countdown').innerHTML += minutes + 'mins ';
+    document.getElementById('countdown').innerHTML += seconds + 'secs';
+}
+
+timer = setInterval(showRemaining, 1000);
+/////
+
+function setCountdown() {
+    document.getElementById("countdown").innerText = showRemaining()
+    //timeDifference( new Date(), new Date(2021,10,24) )
+    //countdown(new Date(2021,11,24)).toString() 
+    //moment("20211124", "YYYYMMDD").fromNow()
+}
+setCountdown()
+</script>
