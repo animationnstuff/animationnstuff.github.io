@@ -18,6 +18,8 @@
 </picture>
 <div class=overlay></div>
 
+<main>
+
 <h1 id=home></h1>
 
 <h1 id=countdown></h1>
@@ -59,7 +61,9 @@
 <div><a href="https://miakemppainen.cargo.site/">Mia Kemppainen </a><p>Art Director</p></div>
 
 <h1 id=about>About</h1>
-<p>Welcome to the online version of our little festival of film, design and creativity. This fall we - the motion design class of 2022 at Hyper Island - have been building our Final Projects™.</p>
+<p>Welcome to the online version of our little festival of film, design and creativity. This fall we - the motion design class of 2022 at Hyper Island - have been building our "Final Projects"™.</p>
+
+</main>
 
 <footer>bye bye</footer>
 
@@ -79,20 +83,17 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
 }
 
 html, 
 body {
-    height: 100vh;
-    max-width:  100vw;
     background-color: var(--black);
     color: var(--white);
-    
-    width: 100ch;
-    margin: auto;
 }
 
+main {
+    margin: 1cm;
+}
 
 .overlay{
     position: fixed;
@@ -138,8 +139,9 @@ picture .corner {
 
 nav{
     position: fixed;
-    left: 0; top: 0;
-    height: 3em; width: 100vw;
+    left: 0; 
+    top: 0;
+    width: 100%;
 
     -background: var(--black);
     background: linear-gradient(0deg, transparent 0%, var(--black) 100%);
@@ -180,9 +182,7 @@ a {
 
 h1 {
     font-family: museo-sans, sans-serif;
-}
-
-h1 {
+    font-weight: 100;
     margin-top: 3em;
 }
 nav h1{
@@ -204,7 +204,7 @@ div{
 div>p::before{
     content: 'Dream job: '
 }
-div>a{
+div a{
     font-family: museo-sans, sans-serif;
     font-size: 24pt;
     text-decoration: none;;
@@ -214,6 +214,12 @@ footer{
     opacity: 0.1;
     padding: 33vh;
     text-align: center;
+}
+
+@media (orientation: portrait)  {
+    h1,h3,a,p{
+        font-size: 40pt;
+    }
 }
 
 
