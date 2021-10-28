@@ -13,9 +13,10 @@
 <aside>24 NOV</aside>
 <picture>
     <p class=left>MD22</p>
-    <img class=corner src=CubeOnly_1.gif></img>
+    <img class=corner src=c.gif></img>
     <p class=right>MD22</p>
 </picture>
+<div class=overlay></div>
 
 <h1 id=home></h1>
 
@@ -60,6 +61,7 @@
 <h1 id=about>About</h1>
 <p>Welcome to the online version of our little festival of film, design and creativity. This fall we - the motion design class of 2022 at Hyper Island - have been building our Final Projects™.</p>
 
+<footer>bye bye</footer>
 
 <style>
 
@@ -91,6 +93,19 @@ body {
     margin: auto;
 }
 
+
+.overlay{
+    position: fixed;
+    left: 0; top: 0;
+    width: 100%; height: 100%;
+    pointer-events: none;
+
+    background-image: url(epic.apng);
+    height: 100%;
+    background-blend-mode:;
+    opacity: 0.02;
+}
+
 picture{
     position: fixed;
     left: 0; top: 0;
@@ -100,6 +115,7 @@ picture{
     border: 5pt solid var(--red);
     box-sizing: border-box;
 }
+
 picture .left {
     position: fixed;
     left: 0;
@@ -154,8 +170,8 @@ aside{
 
 #twitch-embed>iframe{
     width: 100%;
-    height: 62%;
-    border-radius: 6px
+    height: 50vh;
+    border-radius: 6px;
 }
 
 a {
@@ -194,6 +210,11 @@ div>a{
     text-decoration: none;;
 }
 
+footer{
+    opacity: 0.1;
+    padding: 33vh;
+    text-align: center;
+}
 
 
 </style>
