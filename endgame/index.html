@@ -22,19 +22,21 @@
 
 <h1 id=home></h1>
 
-<h1 id=countdown></h1>
 
 
-<!-- Add a placeholder for the Twitch embed -->
+<div class=video_placeholder
+    ><h1 id=countdown></h1>
+</div>
+
+<!--
 <div id="twitch-embed"></div>
-<!-- Load the Twitch embed script -->
 <script src="https://player.twitch.tv/js/embed/v1.js"></script>
-<!-- Create a Twitch.Player object. This will render within the placeholder div -->
 <script type="text/javascript">
   new Twitch.Player("twitch-embed", {
     channel: "motiondesign22"
   });
 </script>
+ -->
 
 
 <h1 id=projects>Projects</h1>
@@ -131,8 +133,8 @@ picture .right {
 }
 picture .corner {
     position: fixed;
-    right: 5pt;
-    bottom: 5pt;
+    right: 55pt;
+    bottom: 35pt;
     width: 25%;
 }
     
@@ -159,7 +161,7 @@ nav a{
 aside{
     position: absolute;
     top: 0;
-    right: 0;
+    right: 10pt;
     font-size: 62pt;
     font-family: neue-haas-unica, sans-serif;
 }
@@ -168,6 +170,20 @@ aside{
     -webkit-text-stroke: 0.5pt white;
     -webkit-text-fill-color: transparent;
   }
+}
+
+.video_placeholder{
+    display: flex;
+    width: 100%;
+    height: 50vh;
+    border-radius: 6px;
+    background-color: black);
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+}
+.video_placeholder{
+    margin: 0;
 }
 
 #twitch-embed>iframe{
