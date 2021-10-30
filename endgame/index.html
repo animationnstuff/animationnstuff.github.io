@@ -40,6 +40,7 @@
 
 
 <h1 id=projects>Projects</h1>
+<section>
 
 <div><a href="http://cinrender.com">Harald Hjortsberg</a><p>VFX/ 3D Artist</p></div>
 <div><a href="https://www.andreaeberggren.com/">Andrea Berggren</a><p>Still searching for it</p></div>
@@ -62,6 +63,9 @@
 <div><a href="https://www.thecreativestream.co/">Emelie Bäck</a><p>Owning my own Studio</p></div>
 <div><a href="http://sofiallorca.com">Sofia Llorca</a><p></p></div>
 <div><a href="https://miakemppainen.cargo.site/">Mia Kemppainen </a><p>Art Director</p></div>
+
+
+</section>
 
 <h1 id=about>About</h1>
 <p>Welcome to the online version of our little festival of film, design and creativity. This fall we - the motion design class of 2022 at Hyper Island - have been building our "Final Projects"™.</p>
@@ -204,7 +208,7 @@ a {
 h1 {
     font-family: museo-sans, sans-serif;
     font-weight: 100;
-    margin-top: 3em;
+    margin: 3em;
 }
 nav h1{
     margin: 0;
@@ -214,12 +218,14 @@ h2 {
     font-family: neue-haas-unica, sans-serif;
 }
 p {
-    font-family: new-spirit, serif;
+    font-family: "new-spirit", serif;
+    max-width: 60ch;
 }
 
 
 div{
     margin: 3em;
+    margin-top: 0;
     background: none;
 }
 div>p::before{
@@ -241,6 +247,10 @@ footer{
     h1,h3,a,p{
         font-size: 40pt;
     }
+}
+
+section{
+    columns: auto 60ch;
 }
 
 
