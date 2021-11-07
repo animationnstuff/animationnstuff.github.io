@@ -10,11 +10,11 @@
     <a href=#about>About</a>
 </nav>
 
-<aside>24 NOV</aside>
+<aside class=outlined>24</aside>
 <picture>
-    <p class=left>MD22</p>
+    <p class="left">MD22</p>
     <img class=corner src=c.gif></img>
-    <p class=right>MD22</p>
+    <p class="right">MD22</p>
 </picture>
 <div class=overlay></div>
 
@@ -68,7 +68,7 @@
 </section>
 
 <h1 id=about>About</h1>
-<p>Welcome to the online version of our little festival of film, design and creativity. This fall we - the motion design class of 2022 at Hyper Island - have been building our "Final Projects"™.</p>
+<p style="margin:auto">Welcome to the online version of our little festival of film, design and creativity. This fall we - the motion design class of 2022 at Hyper Island - have been building our "Final Projects"™.</p>
 
 </main>
 
@@ -90,6 +90,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-size: 3vh;
+}
+*::selection{
+    background: var(--red);
+    color: var(--blue-dark)
 }
 
 html, 
@@ -108,9 +113,8 @@ main {
     width: 100%; height: 100%;
     pointer-events: none;
 
-    background-image: url(epic.apng);
+    -background-image: url(epic.apng);
     height: 100%;
-    background-blend-mode:;
     opacity: 0.02;
 }
 
@@ -142,7 +146,6 @@ picture .corner {
     bottom: 35pt;
     width: 25%;
 }
-    
 
 nav{
     position: fixed;
@@ -167,11 +170,13 @@ aside{
     position: absolute;
     top: 0;
     right: 10pt;
-    font-size: 62pt;
+    font-size: 10vw;
+}
+.outlined{
     font-family: neue-haas-unica, sans-serif;
 }
 @supports (-webkit-text-stroke: 1px black) {
-  aside {
+  .outlined {
     -webkit-text-stroke: 0.5pt white;
     -webkit-text-fill-color: transparent;
   }
@@ -181,8 +186,8 @@ aside{
     display: flex;
     width: 100%;
     height: 50vh;
-    border-radius: 6px;
-    background-color: black);
+    -border-radius: 6px;
+    -background-color: black;
     margin: 0;
     justify-content: center;
     align-items: center;
@@ -191,7 +196,7 @@ aside{
     margin: 0;
 }
 .video_placeholder h1 {
-    font-size: 50pt;
+    -font-size: 50pt;
     margin: 0;
 }
 
@@ -213,6 +218,7 @@ h1 {
 }
 nav h1{
     margin: 0;
+    white-space: nowrap;
 }
 
 h2 {
@@ -221,7 +227,8 @@ h2 {
 p {
     font-family: "new-spirit", serif;
     max-width: 60ch;
-    margin: auto;
+    margin-left: 2ch;
+    font-size: smaller;
 }
 
 
@@ -235,7 +242,7 @@ div>p::before{
 }
 div a{
     font-family: museo-sans, sans-serif;
-    font-size: 24pt;
+    -font-size: 24pt;
     text-decoration: none;;
 }
 
@@ -245,14 +252,15 @@ footer{
     text-align: center;
 }
 
-@media (orientation: portrait)  {
-    h1,h3,a,p{
-        font-size: 40pt;
-    }
-}
-
 section{
     columns: auto 60ch;
+}
+
+@media screen and (max-height: 400px) {
+    *{font-size: 12pt}
+    nav{
+        background: var(--red);
+    }
 }
 
 
